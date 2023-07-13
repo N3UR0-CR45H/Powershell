@@ -15,6 +15,7 @@
 | Ping Sweeper              | Varre a Rede Buscando Hosts na Rede                                              |
 | Reprocessamento Arquivos  | Monitora Diretórios e Movimenta Arquivos para uma Pasta Raiz                     |
 | Conexão SFTP              | Cria uma Conexão com um Servidor SFTP                                            |
+| Desconectar Usuários      | Desconectar Determinado Usuário de Servidores Especificados                      |
 
 </div> 
 </details>
