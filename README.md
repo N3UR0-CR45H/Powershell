@@ -16,6 +16,7 @@
 | Reprocessamento Arquivos  | Monitora Diretórios e Movimenta Arquivos para uma Pasta Raiz                     |
 | Conexão SFTP              | Cria uma Conexão com um Servidor SFTP                                            |
 | Desconectar Usuários      | Desconectar Determinado Usuário de Servidores Especificados                      |
+| Listar Usuários AD        | Traz a Relação de Usuários no Active Directory - Ativo / Inativos                |
 
 </div> 
 </details>
