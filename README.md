@@ -17,6 +17,7 @@
 | Conexão SFTP              | Cria uma Conexão com um Servidor SFTP                                            |
 | Desconectar Usuários      | Desconectar Determinado Usuário de Servidores Especificados                      |
 | Listar Usuários AD        | Traz a Relação de Usuários no Active Directory - Ativo / Inativos                |
+| Listar Máquinas AD        | Traz a Relação de Máquinas no Active Directory                                   |
 
 </div> 
 </details>
