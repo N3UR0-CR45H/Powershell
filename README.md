@@ -19,6 +19,7 @@
 | Listar Usuários AD        | Traz a Relação de Usuários no Active Directory - Ativo / Inativos                |
 | Listar Máquinas AD        | Traz a Relação de Máquinas no Active Directory                                   |
 | Conexão GraphAPI          | Faz a Conexão com a API da Microsoft - Puxando os E-mail de Determinada Caixa    |
+| Instalador ADUC           | Instala o Active Directory Users & Computers - Resolvendo erros                  |
 </div> 
 </details>
 
