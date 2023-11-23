@@ -22,7 +22,8 @@
 | Instalador ADUC           | Instala o Active Directory Users & Computers - Resolvendo erros                  |
 | Mover Usuários            | Move os Usuários de uma OU para outra OU no AD                                   |
 | Mover Grupos              | Move um Grupo de um Servidor para outro Servidor                                 |
-| Listagem Impressoras      | Lista Nome, IP e Driver das Impressoras no Servidor                               |
+| Listagem Impressoras      | Lista Nome, IP e Driver das Impressoras no Servidor                              |
+| Inserir Grupo             | Insere um Grupo como Membro de Outro Grupo em um outro Domínio                   |
 </div> 
 </details>
 
