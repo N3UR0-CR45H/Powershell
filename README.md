@@ -24,6 +24,7 @@
 | Mover Grupos              | Move um Grupo de um Servidor para outro Servidor                                 |
 | Listagem Impressoras      | Lista Nome, IP e Driver das Impressoras no Servidor                              |
 | Inserir Grupo             | Insere um Grupo como Membro de Outro Grupo em um outro Domínio                   |
+| Teste SMTP                | Teste de Envio de E-mails SMTP através do Powershell                             |
 </div> 
 </details>
 
