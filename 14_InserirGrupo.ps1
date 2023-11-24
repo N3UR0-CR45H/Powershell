@@ -1,16 +1,22 @@
-$iDados = Import-Csv -Path "C:\Caminho\Teste.csv" -Delimiter (';')
+$iDados = Import-Csv -Path "C:\Diretorio\Teste150.csv" -Delimiter (';')
+$iLog = "C:\Diretorio\Log1.txt"
 
-#Write-Output $iDados 
+#Write-Output $iDados
 
-$iCredencial = Get-Credential Domínio\Usuário #Precisa ser usuário Administrador
+$iCredencial = Get-Credential Servidor\Usuario
 
-foreach ($iGrupo in $iDados) {
+$iProcessamento = foreach ($iGrupo in $iDados) {
 
-    $iGrupoOrigem = Get-ADGroup -Identity $iGrupo.GrupoOrigem  -Server "Servidor1" 
-    #echo $iGrupoOrigem
- 
-    $iGrupoDestino = Get-ADGroup -Identity $iGrupo.GrupoDestino  -Server "Servidor2" 
-    #echo $iGrupoDestino
+    try {
+        $iGrupoOrigem = Get-ADGroup -Identity $iGrupo.GrupoOrigem -Server "Servidor1" -ErrorAction Stop
+        #echo $iGrupoOrigem
 
-    Add-ADGroupMember -Identity $iGrupoDestino -Members $iGrupoOrigem -Server "Servidor1" -Credential $iCredencial
+        $iGrupoDestino = Get-ADGroup -Identity $iGrupo.GrupoDestino -Server "Servidor2" -ErrorAction Stop
+        #echo $iGrupoDestino
+
+        Add-ADGroupMember -Identity $iGrupoDestino -Members $iGrupoOrigem -Server "Servidor2" -Credential $iCredencial
+    } 
+    catch {
+        $_ | Out-File -Append -FilePath $iLog
+    }
 }
