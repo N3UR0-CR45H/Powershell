@@ -1,0 +1,21 @@
+$iDados = Import-Csv -Path "C:\Arquivo\Teste.csv" -Delimiter (';')
+$iLog = "C:\Teste\Log1.txt"
+
+#Write-Output $iDados
+
+$iGrupo = "grupo"
+
+foreach ($iUsuario in $iDados) {
+
+    $iNomeUsuario = $iUsuario.UserName #A coluna dos ID's precisa ter o "UserName" como cabeçalho
+
+    if (Get-ADUser -Filter {SamAccountName -eq $iNomeUsuario}) {
+
+        Add-ADGroupMember -Identity $iGrupo -Members $iNomeUsuario
+        Write-Host "Usuário $iNomeUsuario - Adicionado ao Grupo $iGrupo."
+
+    } 
+    else {
+        Write-Host "Usuário $iNomeUsuario Não Encontrado no AD."
+    }
+}
