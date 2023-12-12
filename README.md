@@ -26,6 +26,7 @@
 | Inserir Grupo             | Insere um Grupo como Membro de Outro Grupo em um outro Domínio                   |
 | Teste SMTP                | Teste de Envio de E-mails SMTP através do Powershell                             |
 | Hashes                    | Verifica e Compara Hashes de Arquivos                                            |
+| Usuários -> Grupo         | Adicionar uma Lista de Usuários a um Grupo Específico no AD                      |
 </div> 
 </details>
 
