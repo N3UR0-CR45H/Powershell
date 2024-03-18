@@ -27,6 +27,7 @@
 | Teste SMTP                | Teste de Envio de E-mails SMTP através do Powershell                             |
 | Hashes                    | Verifica e Compara Hashes de Arquivos                                            |
 | Usuários -> Grupo         | Adicionar uma Lista de Usuários a um Grupo Específico no AD                      |
+| Usuários -> Funcao        | Atualiza a Função dos Usuários no AD, usando como base um .csv                   |
 </div> 
 </details>
 
