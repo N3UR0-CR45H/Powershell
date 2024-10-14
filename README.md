@@ -29,6 +29,7 @@
 | Usuários -> Grupo         | Adicionar uma Lista de Usuários a um Grupo Específico no AD                      |
 | Usuários -> Funcao        | Atualiza a Função dos Usuários no AD, usando como base um .csv                   |
 | Resolução IPs             | Descobre os IPs dos Hosts em uma Lista, salvando em um log os sucessos e erros   |
+| Limpeza Cache - Teams     | Apagar os arquivos referentes ao Teams, quando dá algum problema na aplicação    |
 </div> 
 </details>
 
